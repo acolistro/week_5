@@ -3,32 +3,32 @@ import TestRunner from 'jest-runner';
 import { exportAllDeclaration } from '@babel/types';
 
 describe('Age', () => {
+    const age = new Age(25);
     test('should only take a number for age object', () => {
         const earthAge = new Age('abc');
         expect(earthAge.posNumCheck()).toEqual("please enter a number");
     });
     test('Ensure the number entered is a positive number', () => {
-        const age = new Age(-25);
-        expect(age.posNumCheck()).toEqual('please enter a positive number');
+        const ageNeg = new Age(-25);
+        expect(ageNeg.posNumCheck()).toEqual('please enter a positive number');
     });
     test('should correctly convert Earth age to Mercury solar age', () => {
-        const age = new Age(25);
-        expect(age.toMercury()).toEqual(25/0.24);
+        age.toMercury();
+        expect(age.mercSolar).toEqual(104);
     });
     test('should correctly convert Earth age to Venus solar age', () => {
-        const age = new Age(25);
-        expect(age.toVenus()).toEqual(25/0.62);
+        age.toVenus();
+        expect(age.venSolar).toEqual(40);
     });
     test('should correctly convert Earth age to Mars solar age', () => {
-        const age = new Age(25);
-        expect(age.toMars()).toEqual(25/1.88);
+        age.toMars();
+        expect(age.marsSolar).toEqual(13);
     });
     test('should correctly convert Earth age to Jupiter age', () => {
-        const age = new Age(25);
-        expect(age.toJupiter()).toEqual(25/11.86);
+        age.toJupiter();
+        expect(age.jupSolar).toEqual(2);
     });
     test('should correctly calculate years left to live on Earth based on a life expectancy of 75 Earth years.', () => {
-        const age = new Age(25);
         expect(age.expect()).toEqual(50);
     });
 });

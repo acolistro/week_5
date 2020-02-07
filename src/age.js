@@ -1,5 +1,10 @@
 export function Age(earthAge) {
     this.earthAge = earthAge;
+    this.earthExpect = 75 - earthAge;
+    this.mercDiff = 0.24;
+    this.venDiff = 0.62;
+    this.marsDiff = 1.88;
+    this.jupDiff = 11.86;
 } 
 
 Age.prototype.posNumCheck = function () {
@@ -13,21 +18,24 @@ Age.prototype.posNumCheck = function () {
 }
 
 Age.prototype.toMercury = function () {
-    const mercAge = this.earthAge / 0.24;
-    return mercAge;
+    const mercAge = this.earthAge / this.mercDiff;
+    this.mercSolar = parseInt(mercAge);
+    let mercLeft = this.earthExpect / this.mercDiff;
+    this.mercExpect = parseFloat(mercLeft);
 }
 
 Age.prototype.toVenus = function () {
-    const venAge = this.earthAge / 0.62;
-    return venAge;
+    const venAge = this.earthAge / this.venDiff;
+    this.venSolar = parseInt(venAge);
+    let venLeft = this.venExpect / this.venDiff;
 }
 
 Age.prototype.toMars = function () {
-    const marsAge = this.earthAge / 1.88;
-    return marsAge;
+    const marsAge = this.earthAge / this.marsDiff;
+    this.marsSolar = parseInt(marsAge);
 }
 
 Age.prototype.toJupiter = function () {
-    const jupiterAge = this.earthAge / 11.86;
-    return jupiterAge;
+    const jupAge = this.earthAge / this.jupDiff;
+    this.jupSolar = parseInt(jupAge);
 }
