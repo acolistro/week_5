@@ -1,3 +1,5 @@
+import { parse } from "querystring";
+
 export function Age(earthAge) {
     this.earthAge = earthAge;
     this.earthExpect = 75 - earthAge;
@@ -20,7 +22,7 @@ Age.prototype.posNumCheck = function () {
 Age.prototype.toMercury = function () {
     const mercAge = this.earthAge / this.mercDiff;
     this.mercSolar = parseInt(mercAge);
-    let mercLeft = (this.mercSolar) - (75 / this.mercDiff);
+    let mercLeft = this.mercSolar - (75 / this.mercDiff);
     this.mercExpect = parseInt(mercLeft);
 }
 
@@ -34,6 +36,8 @@ Age.prototype.toVenus = function () {
 Age.prototype.toMars = function () {
     const marsAge = this.earthAge / this.marsDiff;
     this.marsSolar = parseInt(marsAge);
+    let marsLeft = this.marsSolar - (75 / this.marsDiff);
+    this.marsExpect = parseInt(marsLeft);
 }
 
 Age.prototype.toJupiter = function () {

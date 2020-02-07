@@ -44,4 +44,8 @@ describe('Age', () => {
         ageOver.toMars();
         expect(ageOver.marsExpect).toEqual(5);
     });
+    test('should correctly calculate years left to live on Jupiter based on a life expectancy of 75 Earth years.', () => {
+        ageOver.toJupiter();
+        expect(ageOver.jupExpect).toEqual(0.84);
+    });
 });
