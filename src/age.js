@@ -21,3 +21,8 @@ Age.prototype.toVenus = function () {
     const venAge = this.earthAge / 0.62;
     return venAge;
 }
+
+Age.prototype.toMars = function () {
+    const marsAge = this.earthAge / 1.88;
+    return marsAge;
+}
