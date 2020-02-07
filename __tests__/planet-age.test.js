@@ -38,6 +38,10 @@ describe('Age', () => {
     });
     test('should correctly calculate years left to live on Venus based on a life expectancy of 75 Earth years.', () => {
         ageOver.toVenus();
-        expect(ageOver.venExpect).toEqual(41);
+        expect(ageOver.venExpect).toEqual(16);
+    });
+    test('should correctly calculate years left to live on Mars based on a life expectancy of 75 Earth years.', () => {
+        ageOver.toMars();
+        expect(ageOver.marsExpect).toEqual(5);
     });
 });

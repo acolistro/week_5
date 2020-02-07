@@ -27,8 +27,8 @@ Age.prototype.toMercury = function () {
 Age.prototype.toVenus = function () {
     const venAge = this.earthAge / this.venDiff;
     this.venSolar = parseInt(venAge);
-    let venLeft = (this.earthExpect / this.venDiff) - (75 / this.venDiff);
-    this.venExpect = parseFloat(venLeft);
+    let venLeft = this.venSolar - (75 / this.venDiff);
+    this.venExpect = parseInt(venLeft);
 }
 
 Age.prototype.toMars = function () {
