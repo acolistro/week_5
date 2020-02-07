@@ -11,3 +11,8 @@ Age.prototype.posNumCheck = function () {
         return true;
     }
 }
+
+Age.prototype.toMercury = function () {
+    const mercAge = this.earthAge / 0.24;
+    return mercAge;
+}

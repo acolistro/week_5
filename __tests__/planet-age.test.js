@@ -15,4 +15,8 @@ describe('Age', () => {
         const age = new Age(25);
         expect(age.toMercury()).toEqual(25/0.24);
     });
+    test('should correctly convert Earth age to Venus solar age', () => {
+        const age = new Age(25);
+        expect(age.toVenus()).toEqual(25/0.62);
+    });
 });
