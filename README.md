@@ -10,7 +10,21 @@ _{This is a detailed description of your application. Its purpose and usage.  Gi
 
 |   Behavior    |   Input     |     Output    |
 |--------------:|:-----------:|--------------:|
-
+|Ensure the number entered is a positive number |-25 |"age entered is negative."|
+|Convert Earth age to Mercury solar age. |25 |104.17 |
+|Convert Earth age to Venus solar age. |25 |40.32 |
+|Convert Earth age to Mars solar age. |25 |13.30 |
+|Convert Earth age to Jupiter solar age. |25 |2.11 |
+|Calculate years left to live on Earth based on a life expectancy of 75 Earth years. |25 |50 |
+|Calculate years left to live on Mercury based on a life expectancy of 75 Earth years. |25 |-86.17 |
+|Calculate years left to live on Venus based on a life expectancy of 75 Earth years. |25 |6.18 |
+|Calculate years left to live on Mars based on a life expectancy of 75 Earth years. |25 |127.70 |
+|Calculate years left to live on Jupiter based on a life expectancy of 75 Earth years. |25 |887.39 |
+|Calculate years past Earth life expectancy based on a life expectancy of 75 earth years. |85 |10 |
+|Calculate years past Mercury life expectancy based on a life expectancy of 75 earth years. |85 |-292.10 |
+|Calculate years past Venus life expectancy based on a life expectancy of 75 earth years. |85 |-68.27 |
+|Calculate years past Mars life expectancy based on a life expectancy of 75 earth years. |85 |119.91 |
+|Calculate years past Jupiter life expectancy based on a life expectancy of 75 earth years. |85 |1001.78 |
 
 
 
