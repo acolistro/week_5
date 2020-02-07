@@ -29,6 +29,6 @@ describe('Age', () => {
         expect(age.jupSolar).toEqual(2);
     });
     test('should correctly calculate years left to live on Earth based on a life expectancy of 75 Earth years.', () => {
-        expect(age.expect()).toEqual(50);
+        expect(age.earthExpect).toEqual(50);
     });
 });

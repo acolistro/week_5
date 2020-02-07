@@ -20,7 +20,7 @@ Age.prototype.posNumCheck = function () {
 Age.prototype.toMercury = function () {
     const mercAge = this.earthAge / this.mercDiff;
     this.mercSolar = parseInt(mercAge);
-    let mercLeft = this.earthExpect / this.mercDiff;
+    let mercLeft = (this.earthExpect / this.mercDiff) - (75 / this.mercDiff);
     this.mercExpect = parseFloat(mercLeft);
 }
 
@@ -39,3 +39,4 @@ Age.prototype.toJupiter = function () {
     const jupAge = this.earthAge / this.jupDiff;
     this.jupSolar = parseInt(jupAge);
 }
+
