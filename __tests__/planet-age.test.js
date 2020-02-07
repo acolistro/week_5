@@ -19,4 +19,8 @@ describe('Age', () => {
         const age = new Age(25);
         expect(age.toVenus()).toEqual(25/0.62);
     });
+    test('should correctly convert Earth age to Mars solar age', () => {
+        const age = new Age(25);
+        expect(age.toMars()).toEqual(25 / 1.88);
+    });
 });

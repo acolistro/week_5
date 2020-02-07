@@ -16,3 +16,8 @@ Age.prototype.toMercury = function () {
     const mercAge = this.earthAge / 0.24;
     return mercAge;
 }
+
+Age.prototype.toVenus = function () {
+    const venAge = this.earthAge / 0.62;
+    return venAge;
+}
