@@ -8,7 +8,11 @@ describe('Age', () => {
         expect(earthAge.posNumCheck()).toEqual("please enter a number");
     });
     test('Ensure the number entered is a positive number', () => {
-        const earthAge = new Age(-25);
-        expect(earthAge.posNumCheck()).toEqual('please enter a positive number');
+        const age = new Age(-25);
+        expect(age.posNumCheck()).toEqual('please enter a positive number');
+    });
+    test('should correctly convert Earth age to Mercury solar age', () => {
+        const age = new Age(25);
+        expect(age.toMercury()).toEqual(25/0.24);
     });
 });

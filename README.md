@@ -11,7 +11,7 @@ _{This is a detailed description of your application. Its purpose and usage.  Gi
 |   Behavior    |   Input     |     Output    |
 |--------------:|:-----------:|--------------:|
 |Should only take a number for age object. |abc |"not a number" |
-|Ensure the number entered is a positive number |-25 |"age entered is negative."|
+|Ensure the number entered is a positive number |-25 |"please enter a positive number."|
 |Convert Earth age to Mercury solar age. |25 |104.17 |
 |Convert Earth age to Venus solar age. |25 |40.32 |
 |Convert Earth age to Mars solar age. |25 |13.30 |
