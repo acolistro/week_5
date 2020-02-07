@@ -20,14 +20,15 @@ Age.prototype.posNumCheck = function () {
 Age.prototype.toMercury = function () {
     const mercAge = this.earthAge / this.mercDiff;
     this.mercSolar = parseInt(mercAge);
-    let mercLeft = (this.earthExpect / this.mercDiff) - (75 / this.mercDiff);
-    this.mercExpect = parseFloat(mercLeft);
+    let mercLeft = (this.mercSolar) - (75 / this.mercDiff);
+    this.mercExpect = parseInt(mercLeft);
 }
 
 Age.prototype.toVenus = function () {
     const venAge = this.earthAge / this.venDiff;
     this.venSolar = parseInt(venAge);
-    let venLeft = this.venExpect / this.venDiff;
+    let venLeft = (this.earthExpect / this.venDiff) - (75 / this.venDiff);
+    this.venExpect = parseFloat(venLeft);
 }
 
 Age.prototype.toMars = function () {

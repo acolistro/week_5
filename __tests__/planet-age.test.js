@@ -4,6 +4,7 @@ import { exportAllDeclaration } from '@babel/types';
 
 describe('Age', () => {
     const age = new Age(25);
+    const ageOver = new Age(85)
     test('should only take a number for age object', () => {
         const earthAge = new Age('abc');
         expect(earthAge.posNumCheck()).toEqual("please enter a number");
@@ -30,5 +31,13 @@ describe('Age', () => {
     });
     test('should correctly calculate years left to live on Earth based on a life expectancy of 75 Earth years.', () => {
         expect(age.earthExpect).toEqual(50);
+    });
+    test('should correctly calculate years left to live on Mercury based on a life expectancy of 75 Earth years.', () => {
+        ageOver.toMercury();
+        expect(ageOver.mercExpect).toEqual(41);
+    });
+    test('should correctly calculate years left to live on Venus based on a life expectancy of 75 Earth years.', () => {
+        ageOver.toVenus();
+        expect(ageOver.venExpect).toEqual(41);
     });
 });
