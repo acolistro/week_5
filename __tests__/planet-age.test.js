@@ -7,8 +7,8 @@ describe('Age', () => {
         const earthAge = new Age('abc');
         expect(earthAge.posNumCheck()).toEqual("please enter a number");
     });
-    test('Ensure the number added is a positive number', () => {
-        const earthAge = Age(-25);
+    test('Ensure the number entered is a positive number', () => {
+        const earthAge = new Age(-25);
         expect(earthAge.posNumCheck()).toEqual('please enter a positive number');
     });
 });
