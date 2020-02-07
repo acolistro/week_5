@@ -26,3 +26,8 @@ Age.prototype.toMars = function () {
     const marsAge = this.earthAge / 1.88;
     return marsAge;
 }
+
+Age.prototype.toJupiter = function () {
+    const jupiterAge = this.earthAge / 11.86;
+    return jupiterAge;
+}
