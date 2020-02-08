@@ -1,12 +1,12 @@
-# _{Application Name}_
+# _Solar Age Calculator_
 
-#### _{Brief description of application}, {Date of current version}_
+#### _Calculates Solar Age on different planets in the solar system, Current version: Feb 2020_
 
-#### By _**{List of contributors}**_
+#### By _**Alyssa Colistro**_
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_This is a simple web application that is designed to take in a number from a user (their age) and output what their "solar" age is on Mercury, Venus, Mars and Jupiter. It will also output how much time the user has left to live or how many years past life expectancy they are based on an Earth life expectancy of 75 years._
 
 |   Behavior    |   Input     |     Output    |
 |--------------:|:-----------:|--------------:|
@@ -33,28 +33,47 @@ _{This is a detailed description of your application. Its purpose and usage.  Gi
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* _Access my repository for this project on GitHub here: https://github.com/acolistro/week_5.git_
+* _Ensure you have node and npm properly installed on your machine_
+* _Once you have the repository cloned, run npm init -y in the repository from your command line_
+* _Delete the package-lock.json file from the repository._
+* _Once that is done, run npm install_
+* _Once that is done, run npm run build_
+* _Once that is complete you should be able to use jest to see the results of the tests written (using npm test in the command line) and use the functionality of the app_
+* _If you build a front end/UI, you can use the npm start command to view the app on a local server._
 
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_
 
 ## Known Bugs
 
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
+_There are no known bugs with this application at this time._
 
 ## Support and contact details
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+_If you find a bug I highly encourage you to contact me at arcolistro@gmail.com and/or submit a pull request to this repository. Please note that this application is not built to be compatible with web-accessibility tools or be viewed on any browser other than the current version of the Chrome browser._
 
 ## Technologies Used
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+_This app was built using JavaScript, Node.js, npm, HTML as well as the following dependencies:_
+
+    "@babel/core": "^7.6.4",
+    "@babel/plugin-transform-modules-commonjs": "^7.6.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.2.0",
+    "eslint": "^6.3.0",
+    "eslint-loader": "^3.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^24.9.0",
+    "style-loader": "^1.0.0",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "4.39.3",
+    "webpack-cli": "^3.3.8",
+    "webpack-dev-server": "^3.8.0"
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.16.1"
 
 ### License
 
-*{Determine the license under which this application can be used.  See below for more details on licensing.}*
+*There are no licensed materials used in this app in its current state.*
 
-Copyright (c) 2016 **_{List of contributors or company name}_**
+Copyright (c) 2020 **_MallSoft95 LLC_**
