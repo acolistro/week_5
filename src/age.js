@@ -43,5 +43,11 @@ Age.prototype.toMars = function () {
 Age.prototype.toJupiter = function () {
     const jupAge = this.earthAge / this.jupDiff;
     this.jupSolar = parseInt(jupAge);
+    let jupLeft = jupAge - (75 / this.jupDiff);
+    if (jupLeft < 1) {
+        this.jupExpect = parseFloat(jupLeft.toFixed(2));
+    } else {
+        this.jupExpect = parseInt(jupLeft);
+    }    
 }
 
